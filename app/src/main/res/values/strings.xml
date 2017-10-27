@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyTweet</string>
+    <string name="welcome_header">Welcome to MyTweet</string>
+    <string name="welcome_sub_header">See what\'s happening</string>
+    <string name="sign_up">Sign-Up</string>
+    <string name="login">Login</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register_button">Register For MyTweet</string>
+    <string name="register">Register</string>
+    <string name="menuSettings">Settings</string>
+    <string name="menuReport">Report</string>
+    <string name="Homepage">Homepage</string>
+</resources>
