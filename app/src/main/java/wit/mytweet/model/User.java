@@ -1,7 +1,10 @@
 package wit.mytweet.model;
 
 public class User {
-    private String firstName, lastName, email, password;
+    private String firstName;
+    private String lastName;
+    public String email;
+    public String password;
 
     public User(String firstName, String lastName, String email, String password) {
         setFirstName(firstName);
@@ -25,6 +28,10 @@ public class User {
 
     private void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getFullName() {
+        return getFirstName() + " " + getLastName();
     }
 
     public String getEmail() {

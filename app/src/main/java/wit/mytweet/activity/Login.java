@@ -15,34 +15,29 @@ import wit.mytweet.model.User;
 public class Login extends AppCompatActivity {
 
     private MyTweetApp app;
-    private Button loginButton;
     private EditText email, password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         app = (MyTweetApp) getApplication();
-        loginButton = (Button) findViewById(R.id.login_button);
-        email = (EditText) findViewById(R.id.email);
-        password = (EditText) findViewById(R.id.password);
-        if (loginButton != null) {
-            Log.v("MyTweet", "Got login button");
-        }
+
+        email = (EditText) findViewById(R.id.Email);
+        password = (EditText) findViewById(R.id.Password);
     }
 
     public void loginUser(View view) {
+
         String emailInput = email.getText().toString();
         String passwordInput = password.getText().toString();
 
-        for (User user : app.users) {
-            if (emailInput.equals(user.getEmail()) && passwordInput.equals(user.getPassword())) {
-                startActivity(new Intent(this, Home.class));
-                Log.v("MyTweet", "Login successful " + emailInput);
-            } else {
-                Log.v("MyTweet", "Login failed");
-                startActivity(new Intent(this, Welcome.class));
-            }
+        if (app.validUser(emailInput, passwordInput)) {
+            startActivity(new Intent(this, Compose.class));
+            Log.v("MyTweet", "Login successful " + emailInput);
+        } else {
+            Log.v("MyTweet", "Login failed");
         }
     }
 }

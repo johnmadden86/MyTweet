@@ -15,25 +15,23 @@ import wit.mytweet.model.User;
 public class Register extends AppCompatActivity {
 
     private MyTweetApp app;
-    private Button registerButton;
     private EditText firstName, lastName, email, password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+
         app = (MyTweetApp) getApplication();
-        registerButton = (Button) findViewById(R.id.register_button);
+
         firstName = (EditText) findViewById(R.id.firstName);
         lastName = (EditText) findViewById(R.id.lastName);
-        email = (EditText) findViewById(R.id.email);
-        password = (EditText) findViewById(R.id.password);
-        if (registerButton != null) {
-            Log.v("MyTweet", "Got reg button");
-        }
+        email = (EditText) findViewById(R.id.Email);
+        password = (EditText) findViewById(R.id.Password);
     }
 
     public void registerUser(View view) {
+
         User user = new User(
                 firstName.getText().toString(),
                 lastName.getText().toString(),
@@ -42,6 +40,6 @@ public class Register extends AppCompatActivity {
         );
 
         app.newUser(user);
-        startActivity(new Intent(this, Home.class));
+        startActivity(new Intent(this, Compose.class));
     }
 }

@@ -11,6 +11,13 @@
     <string name="register_button">Register For MyTweet</string>
     <string name="register">Register</string>
     <string name="menuSettings">Settings</string>
-    <string name="menuReport">Report</string>
     <string name="Homepage">Homepage</string>
+    <string name="timelineTitle">Timeline</string>
+    <string name="send_tweet">Send Tweet</string>
+    <string name="hot_takes">Share your hot takes</string>
+    <string name="Logout">Logout</string>
+    <string name="defaultdate">25/12/2016</string>
+    <string name="defaultTweetText">Make America Great Again!</string>
+    <string name="defaultAuthor">Donald J. Trump</string>
+    <string name="composeNew">Compose New Tweet</string>
 </resources>
