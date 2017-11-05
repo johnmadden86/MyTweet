@@ -5,12 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import wit.mytweet.R;
-import wit.mytweet.main.MyTweetApp;
-import wit.mytweet.model.User;
+import wit.mytweet.app.MyTweetApp;
 
 public class Login extends AppCompatActivity {
 
@@ -37,7 +36,7 @@ public class Login extends AppCompatActivity {
             startActivity(new Intent(this, Compose.class));
             Log.v("MyTweet", "Login successful " + emailInput);
         } else {
-            Log.v("MyTweet", "Login failed");
+            Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show();
         }
     }
 }

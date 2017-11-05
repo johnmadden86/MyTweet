@@ -5,11 +5,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 
 import wit.mytweet.R;
-import wit.mytweet.main.MyTweetApp;
+import wit.mytweet.app.MyTweetApp;
 import wit.mytweet.model.User;
 
 public class Register extends AppCompatActivity {
@@ -28,10 +27,10 @@ public class Register extends AppCompatActivity {
         lastName = (EditText) findViewById(R.id.lastName);
         email = (EditText) findViewById(R.id.Email);
         password = (EditText) findViewById(R.id.Password);
+        Log.v("MyTweet", "Sign up page loaded");
     }
 
     public void registerUser(View view) {
-
         User user = new User(
                 firstName.getText().toString(),
                 lastName.getText().toString(),
@@ -40,6 +39,9 @@ public class Register extends AppCompatActivity {
         );
 
         app.newUser(user);
-        startActivity(new Intent(this, Compose.class));
+        Log.v("MyTweet", "Loading compose tweet screen");
+        Intent intent = new Intent(this, Compose.class);
+        //intent.putExtra("TWEET_ID", "");
+        startActivity(intent);
     }
 }
