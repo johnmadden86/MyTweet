@@ -1,8 +1,8 @@
-package wit.mytweet.model;
+package app.mytweet.model;
 
 import java.util.ArrayList;
 
-import static wit.android.helpers.LogHelpers.info;
+import static app.android.helpers.LogHelpers.info;
 
 public class TweetCollection {
 

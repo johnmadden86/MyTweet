@@ -1,4 +1,4 @@
-package wit.mytweet.activity;
+package app.mytweet.activity;
 
 
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
-import wit.mytweet.R;
+import app.mytweet.R;
 
 
 public class Timeline extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package wit.mytweet.app;
+package app.mytweet.app;
 
 
 import android.app.Application;
@@ -7,9 +7,9 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import wit.mytweet.model.TweetCollection;
-import wit.mytweet.model.TweetSerialiser;
-import wit.mytweet.model.User;
+import app.mytweet.model.TweetCollection;
+import app.mytweet.model.TweetSerialiser;
+import app.mytweet.model.User;
 
 public class MyTweetApp extends Application {
     protected  static MyTweetApp app;

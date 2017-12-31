@@ -1,4 +1,4 @@
-package wit.mytweet.model;
+package app.mytweet.model;
 
 import android.content.Context;
 

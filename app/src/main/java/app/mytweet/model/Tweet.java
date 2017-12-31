@@ -1,11 +1,10 @@
-package wit.mytweet.model;
+package app.mytweet.model;
 
 import android.content.Context;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.Date;
 import java.util.Random;
 
 public class Tweet {

@@ -1,4 +1,4 @@
-package wit.mytweet.activity;
+package app.mytweet.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import wit.mytweet.R;
-import wit.mytweet.app.MyTweetApp;
+import app.mytweet.R;
+import app.mytweet.app.MyTweetApp;
 
 public class Login extends AppCompatActivity {
 
@@ -38,5 +38,10 @@ public class Login extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void signUpButtonPressed(View view) {
+        Log.v("MyTweet", "Sign up pressed");
+        startActivity(new Intent(this, Register.class));
     }
 }

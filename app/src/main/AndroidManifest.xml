@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="wit.mytweet">
+    package="app.mytweet">
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
-        android:name=".app.MyTweetApp"
+        android:name="app.mytweet.app.MyTweetApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,25 +13,22 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".activity.Welcome"
-            android:label="@string/app_name">
+            android:name="app.mytweet.activity.Timeline"
+            android:label="@string/timelineTitle" />
+        <activity
+            android:name="app.mytweet.activity.Compose"
+            android:label="@string/composeNew" />
+        <activity
+            android:name="app.mytweet.activity.Register"
+            android:label="@string/register" />
+        <activity
+            android:name="app.mytweet.activity.Login"
+            android:label="@string/login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.Timeline"
-            android:label="@string/timelineTitle" />
-        <activity
-            android:name=".activity.Compose"
-            android:label="@string/composeNew" />
-        <activity
-            android:name=".activity.Register"
-            android:label="@string/register" />
-        <activity
-            android:name=".activity.Login"
-            android:label="@string/login" />
 
 
 

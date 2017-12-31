@@ -1,4 +1,4 @@
-package wit.android.helpers;
+package app.android.helpers;
 
 import android.app.Activity;
 import android.content.Intent;

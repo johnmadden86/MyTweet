@@ -1,4 +1,4 @@
-package wit.mytweet.activity;
+package app.mytweet.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +10,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import wit.mytweet.R;
-import wit.mytweet.app.MyTweetApp;
-import wit.mytweet.model.Tweet;
-import wit.mytweet.model.TweetCollection;
+import app.mytweet.R;
+import app.mytweet.app.MyTweetApp;
+import app.mytweet.model.Tweet;
+import app.mytweet.model.TweetCollection;
 
 public class Compose extends AppCompatActivity {
     static ActionBar actionBar;

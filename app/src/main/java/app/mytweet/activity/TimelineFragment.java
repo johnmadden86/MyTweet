@@ -1,4 +1,4 @@
-package wit.mytweet.activity;
+package app.mytweet.activity;
 
 import android.annotation.SuppressLint;
 import android.app.ListFragment;
@@ -19,13 +19,13 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import wit.mytweet.R;
-import wit.mytweet.app.MyTweetApp;
-import wit.mytweet.model.Tweet;
-import wit.mytweet.model.TweetCollection;
+import app.mytweet.R;
+import app.mytweet.app.MyTweetApp;
+import app.mytweet.model.Tweet;
+import app.mytweet.model.TweetCollection;
 
-import static wit.android.helpers.IntentHelper.startActivityNew;
-import static wit.android.helpers.IntentHelper.startActivityWithData;
+import static app.android.helpers.IntentHelper.startActivityNew;
+import static app.android.helpers.IntentHelper.startActivityWithData;
 
 public class TimelineFragment extends ListFragment implements AdapterView.OnItemClickListener {
     private ArrayList<Tweet> tweets;
@@ -82,7 +82,7 @@ public class TimelineFragment extends ListFragment implements AdapterView.OnItem
                 Toast.makeText(getActivity(), "Settings Selected", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.menuLogout:
-                startActivity(new Intent(getActivity(), Welcome.class));
+                startActivity(new Intent(getActivity(), Login.class));
                 break;
         }
         return true;

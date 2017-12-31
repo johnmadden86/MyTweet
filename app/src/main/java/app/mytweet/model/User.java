@@ -1,9 +1,9 @@
-package wit.mytweet.model;
+package app.mytweet.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import static wit.mytweet.model.Tweet.unsignedLong;
+import static app.mytweet.model.Tweet.unsignedLong;
 
 public class User {
     private Long id;

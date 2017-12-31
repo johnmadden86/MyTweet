@@ -1,4 +1,4 @@
-package wit.mytweet.activity;
+package app.mytweet.activity;
 
 import android.Manifest;
 import android.app.Activity;
@@ -27,15 +27,15 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-import wit.mytweet.R;
-import wit.mytweet.app.MyTweetApp;
-import wit.mytweet.model.Tweet;
-import wit.mytweet.model.TweetCollection;
+import app.mytweet.R;
+import app.mytweet.app.MyTweetApp;
+import app.mytweet.model.Tweet;
+import app.mytweet.model.TweetCollection;
 
-import static wit.android.helpers.ContactHelper.getContact;
-import static wit.android.helpers.ContactHelper.getEmail;
-import static wit.android.helpers.ContactHelper.sendEmail;
-import static wit.android.helpers.IntentHelper.selectContact;
+import static app.android.helpers.ContactHelper.getContact;
+import static app.android.helpers.ContactHelper.getEmail;
+import static app.android.helpers.ContactHelper.sendEmail;
+import static app.android.helpers.IntentHelper.selectContact;
 
 public class TweetFragment extends Fragment
         implements View.OnClickListener, TextWatcher, DatePickerDialog.OnDateSetListener {
@@ -113,7 +113,7 @@ public class TweetFragment extends Fragment
                 Toast.makeText(getActivity(), "Settings Selected", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.menuLogout:
-                startActivity(new Intent(getActivity(), Welcome.class));
+                startActivity(new Intent(getActivity(), Login.class));
                 break;
         }
         return true;
